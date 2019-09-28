@@ -1,7 +1,7 @@
 <h2>General info</h2>
 
-Design for this website has been created by my friend ("stronka-do-kodzenia" in "images" folder). <br>
-I've created the website with bthe technologies listed below.
+Design for this website has been created by my friend ("stronka-do-kodzenia.png" in "images" folder). <br>
+I've created the website with the technologies listed below.
 
 <h2>Technologies</h2>
 <ul>
