@@ -27,6 +27,9 @@
  .nav-list, .list{
      padding: 10px;
 }
+ .nav-list a:hover{
+     font-weight: bold;
+}
  a{
      text-decoration: none;
      text-transform: uppercase;
@@ -89,7 +92,7 @@
      grid-column: 1/4;
      grid-row: 2/4;
 }
- .more, .about-more{
+ .more{
      background: #FFFFFF;
      color: #000000;
      text-transform: uppercase;
@@ -97,8 +100,18 @@
      grid-column: 2/3;
      grid-row: 3/4;
      text-align: center;
-     padding-top: 10px;
+     padding-top: 5px;
+     padding-bottom: 5px;
 }
+ .more.ab{
+    padding-top: 10px;
+    padding-bottom: 2px;
+ }
+ .more:hover{
+     cursor: pointer;
+     font-weight: bold;
+     box-shadow: 0 0 4px #DDDDDD;
+ }
  .inner{
      display: none;
 }
@@ -107,19 +120,22 @@
      display: grid;
      grid-template-columns: repeat(3, 1fr);
      grid-template-rows: 1fr 3fr 0.5fr 0.5fr;
-     height: 550px;
+     height: 500px;
 }
  .about-phar{
      background: #000000;
      grid-column: 1/4;
      grid-row: 2/4;
+     padding-top: 20px;
      padding-left: 5px;
      padding-right: 5px;
+     margin-top: 5px;
 }
  .about-header{
      background: #000000;
      grid-column: 1/4;
      grid-row: 1/3;
+     padding-top: 10px;
 }
  .about-more{
      grid-row: 3/5;
@@ -127,15 +143,15 @@
  img{
      max-width: 100%;
 }
-.text{
+ .text{
      color: #000000;
      background: #CCCCCC;
-     height: 300px;
+     height: 320px;
      padding-right: 5px;
      padding-left: 5px;
      margin-bottom: 30px;
 }
-.loading{
+ .loading{
      display: flex;
      flex-direction: row;
      justify-content: center;
@@ -144,7 +160,10 @@
      width: 70%;
      height: 50px;
 }
-.load-circle{
+ .loading div:nth-child(2){
+     background: #FFFFFF;
+ }
+ .load-circle{
      width: 15px;
      height: 15px;
      margin-left: 5px;
@@ -167,30 +186,49 @@
      justify-content: center;
      align-items: center;
 }
+ .list2 img:hover{
+     box-shadow: 0 0 4px #DDDDDD;
+ }
  .footer-img{
      background: #FFFFFF;
 }
  .list-wrapper{
      font-size: 1em;
 }
- @media(min-width: 500px){
+ .list-wrapper:hover{
+     font-weight: bold;
+     cursor: pointer;
+ }
+ @media(min-width: 400px){
      .welcome{
          height: 180px;
     }
      .project{
-         height: 300px;
+         height: 340px;
     }
      .about{
-         height: 350px;
+         height: 430px;
+         padding-right: 10px;
+         padding-left: 10px;
     }
      .text{
-         height: 230px 
+         height: 280px;
+         padding-right: 10px;
+         padding-left: 10px; 
     }
+}
+ @media(min-width: 550px){
+     .about{
+        height: 380px;
+     }
+     .text{
+        height: 230px;
+     }
 }
  @media(min-width: 920px){
      .welcome, .project-phar, .about-phar, .text{
          font-size: 0.9em;
-         line-height: 1.6em;
+         line-height: 1.4em;
     }
      .nav-list{
          font-size: 1em;
@@ -204,7 +242,7 @@
          margin-left: auto;
     }
      .welcome{
-         height: 200px;
+         height: 170px;
          padding-left: 5px;
          margin-bottom: 40px;
     }
@@ -222,7 +260,8 @@
          width: 80%;
          margin-left: auto;
          margin-right: auto;
-         height: 600px;
+         height: 350px;
+         font-size: 0.8em;
     }
      .inner{
          width: 85%;
@@ -239,8 +278,8 @@
      .about{
          grid-template-columns: repeat(3, 1fr);
          grid-template-rows: 1fr 2.8fr 0.6fr 0.6fr;
-         margin-top: 70px;
-         height: 350px;
+         margin-top: -150px;
+         height: 380px;
     }
      .about-header{
          margin-top: 30px;
@@ -269,6 +308,7 @@
     }
      .footer.list{
          flex-direction: column;
+         margin-left: 60px;
     }
      .list-wrapper{
          margin-bottom: 15px;
@@ -282,6 +322,14 @@
      .about-phar{
          margin-top: 30px;
     }
+     .about{
+         height: 400px;
+         margin-top: 70px;
+     }
+     .project{
+        height: 600px;
+        font-size: 1em;
+     }
      .load-circle{
          width: 20px;
          height: 20px;
