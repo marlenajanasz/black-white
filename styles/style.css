@@ -330,6 +330,12 @@
         height: 600px;
         font-size: 1em;
      }
+      .more{
+        padding-top: 10px;
+     }
+     .more.ab{
+        padding-top: 12px;
+     }
      .load-circle{
          width: 20px;
          height: 20px;
