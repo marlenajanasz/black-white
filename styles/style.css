@@ -12,7 +12,7 @@
      display: flex;
      flex-direction: column;
 }
- h1{
+ .banner{
      align-self: center;
 }
  .nav-list{
